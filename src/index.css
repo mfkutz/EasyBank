@@ -1,0 +1,43 @@
+:root {
+    /*  ### Primary */
+    --Dark-Blue-Color: hsl(233, 26%, 24%);
+    --Lime-Green-Color: hsl(136, 65%, 51%);
+    --Bright-Cyan-Color: hsl(192, 70%, 51%);
+
+    /* ### Neutral */
+    --Grayish-Blue-Color: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue-Color: hsl(220, 16%, 96%);
+    --Very-Light-Gray_color: hsl(0, 0%, 98%);
+    --White-Color: hsl(0, 0%, 100%);
+
+    /* ### Gradient */
+    --Green-End-Color: #29b7d7;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 0;
+}
+
+html {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
