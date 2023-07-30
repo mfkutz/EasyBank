@@ -1,14 +1,22 @@
 import './Navbar.css'
-import { logo, iconHamburguer } from '../../assets/index'
+import { logo, iconHamburguer, iconClose } from '../../assets/index'
+import Button from '../Button/Button'
+import { useState } from 'react'
 
 const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+
+
+
   return (
     <nav>
       <div className="wrapper">
 
         <img src={logo} alt="logo" className='logo' />
 
-        <ul>
+        <ul className='desktop'>
           <li>
             <a href="#">Home</a>
           </li>
@@ -26,11 +34,30 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <a href="#" className='btn-request'>
-          Request invite
-        </a>
+        <div className={`mobile ${menuOpen ? '' : 'inactive'}`}>
 
-        <img src={iconHamburguer} alt="hamburger" className='iconHamburguer' />
+          <a href="#">Home</a>
+
+
+          <a href="#">About</a>
+
+
+          <a href="#">Contact</a>
+
+
+          <a href="#">Blog</a>
+
+
+          <a href="#">Carrers</a>
+
+        </div>
+
+        <Button prop={'disabled'} />
+
+
+        <img onClick={() => setMenuOpen(true)} src={iconHamburguer} alt="hamburger" className={`iconHamburguer ${menuOpen ? 'inactive' : ''} `} />
+
+        <img onClick={() => setMenuOpen(false)} src={iconClose} alt="close" className={`iconClose ${menuOpen ? '' : 'inactive'}`} />
 
 
       </div>

@@ -1,0 +1,21 @@
+ .btn-request {
+     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+     color: var(--White-Color);
+     font-size: 14px;
+     font-weight: 700;
+     padding: 15px 34px;
+     border-radius: 24px;
+ }
+
+ .btn-request:hover {
+     opacity: 50%;
+ }
+
+ @media (max-width:770px) {
+
+     .disabled {
+         display: none;
+     }
+
+
+ }
