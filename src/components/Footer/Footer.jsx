@@ -2,6 +2,7 @@ import './Footer.css'
 import Button from '../Button/Button'
 
 import { logo, iconFacebook, iconYoutube, iconTwitter, iconPinterest, iconInstagram } from '../../assets/index'
+import Logo from '../Logo/Logo'
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
 
           <div className='logo-social'>
             <div>
-              <img src={logo} alt="" />
+              <Logo color={'#fff'}/>
             </div>
             <div className='social-icons'>
               <a href="#">

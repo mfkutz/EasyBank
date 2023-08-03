@@ -1,20 +1,16 @@
 header {
-    /* background: rgb(55, 88, 187); */
     background: var(--Very-Light-Gray_color);
-    width: 100%;
-    /* background-image: url('../../assets/bg-intro-desktop.svg'); */
-    /* background-repeat: no-repeat; */
-   /*  position: relative; */
-    /* background-position: 610px -260px; */
-    
+    overflow: hidden;
 }
 
 header .header-container {
     display: flex;
-    width: 1110px;
+    max-width: 1100px;
     margin: 0 auto;
+
 }
 
+/**************** LEFT ******************/
 header .left h1 {
     color: var(--Dark-Blue-Color);
     font-size: 56px;
@@ -28,34 +24,157 @@ header .left p {
     padding-top: 40px;
 }
 
-header .right {
-    
-    z-index: 0;
-    position: relative;
-    overflow-x: hidden;
-
-}
-
 .btn-container {
     padding-top: 40px;
     padding-bottom: 170px;
 }
 
+header .left {
+
+    width: 100%;
+}
 
 
 
+
+/***************** RIGHT ****************/
+
+header .right {
+    width: 100%;
+    position: relative;
+    /* height: inherit; */
+    /* height: 400px; */
+
+    /* background: red; */
+    /* background-image: url('../../assets/bg-intro-desktop.svg'); */
+
+
+}
+
+
+
+.bgIntroDesktop {
+    position: absolute;
+    left: -88px;
+    top: -260px;
+
+}
+
+.bgIntroMobile {
+    display: none;
+}
+
+.imgMockups {
+    position: absolute;
+    top: -125px;
+    right: -300px;
+}
+
+
+/**************** TABLET *******************/
 @media (max-width:1100px) {
     header .header-container {
         flex-direction: column;
-        flex-wrap: wrap-reverse;
-        width: 100%;
+        padding: 0 0 0 25px;
     }
+
+
+
+    header .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header .left h1 {
+        padding-top: 40px;
+    }
+
+    header .left p {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .btn-container {
+        padding-bottom: 96px;
+    }
+
+    .right {
+        order: -1;
+        flex: 1;
+        display: flex;
+        min-height: 50vh;
+        overflow: hidden;
+    }
+
+    .bgIntroDesktop {
+        left: 50px;
+        top: -70px;
+        width: 900px;
+    }
+
+    .imgMockups {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+    }
+
 }
 
-@media (max-width:720px) {
-    header .wrapper {
+
+
+/**************** PHONE *******************/
+@media (max-width:770px) {
+    header .header-container {
         flex-direction: column;
     }
 
+    .right {
+        order: -1;
+    }
+
+    header .left h1 {
+        padding-top: 30px;
+        font-size: 38px;
+    }
+
+    header .left p {
+        padding-top: 18px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.4rem;
+    }
+
+
+    .right {
+        /*  order: -1; */
+        /*  flex: 1; */
+        /* display: flex; */
+        min-height: 33.5vh;
+        /* overflow: hidden; */
+    }
+
+    .bgIntroDesktop {
+        left: -90px;
+        top: -150px;
+        width: 700px;
+
+    }
+
+    .imgMockups {
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+    }
+
+
+    header .header-container {
+        padding: 0;
+    }
 
 }

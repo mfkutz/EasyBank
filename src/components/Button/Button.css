@@ -8,7 +8,7 @@
  }
 
  .btn-request:hover {
-     opacity: 50%;
+     background: linear-gradient(to right, rgb(132, 223, 162), rgb(122, 214, 225));
  }
 
  @media (max-width:770px) {
@@ -16,6 +16,4 @@
      .disabled {
          display: none;
      }
-
-
  }

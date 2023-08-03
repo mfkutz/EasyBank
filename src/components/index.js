@@ -11,5 +11,5 @@ export {
     Choose,
     Skills,
     Notes,
-    Footer
+    Footer,
 }
