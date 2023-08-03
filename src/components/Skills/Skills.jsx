@@ -7,14 +7,12 @@ const Skills = () => {
       <div className="wrapper">
         <div className='skills-container'>
 
-
           <div className="card">
             <img src={iconOnline} alt="Online Banking" />
             <h3 className='tittle-skills'>Online Banking</h3>
             <p className='text-skills'> Our modern web and mobile applications allow you to keep track of your finances
               wherever you are in the world.</p>
           </div>
-
 
           <div className="card">
             <img src={iconBudgeting} alt="Online Banking" />
@@ -36,6 +34,7 @@ const Skills = () => {
             <p className='text-skills'>Manage your savings, investments, pension, and much more from one account. Tracking
               your money has never been easier.</p>
           </div>
+          
         </div>
       </div>
     </section>
