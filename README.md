@@ -1,3 +1,5 @@
+https://easy-bank-neon.vercel.app
+
 # Frontend Mentor - Easybank landing page
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
