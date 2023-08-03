@@ -3,7 +3,6 @@
     padding-bottom: 80px;
 }
 
-
 .article-card {
     width: 255px;
     background: white;
@@ -11,7 +10,6 @@
     flex-direction: column;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
 }
 
 .by-person {

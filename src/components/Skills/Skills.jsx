@@ -36,10 +36,7 @@ const Skills = () => {
             <p className='text-skills'>Manage your savings, investments, pension, and much more from one account. Tracking
               your money has never been easier.</p>
           </div>
-
         </div>
-
-
       </div>
     </section>
   )

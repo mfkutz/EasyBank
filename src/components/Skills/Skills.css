@@ -8,7 +8,6 @@
     gap: 30px;
 }
 
-
 #skills .card {
     max-width: 255px;
     padding-top: 45px;
@@ -32,7 +31,6 @@
         width: 100%;
     }
 
-
     #skills .wrapper {
         width: 100%;
         display: flex;
@@ -52,12 +50,9 @@
         font-size: 16px;
         line-height: 25px;
     }
-
-
 }
 
 @media (max-width:650px) {
-
 
     #skills .skills-container {
         grid-template-columns: 1fr;

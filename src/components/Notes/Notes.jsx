@@ -54,7 +54,6 @@ const Notes = () => {
             </div>
           </div>
 
-
         </div>
       </div>
     </section>

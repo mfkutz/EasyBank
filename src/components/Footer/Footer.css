@@ -51,20 +51,6 @@ footer ul {
     footer .wrapper {
         width: 100%;
     }
-
-    /*  footer .footer-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    } */
-    /* 
-    .rights-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin-top: 30px;
-    } */
-
-
 }
 
 @media (max-width:650px) {
@@ -80,9 +66,7 @@ footer ul {
 
     .rights-container {
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
-        /* justify-content: space-between; */
         margin-top: 40px;
     }
     .rights {

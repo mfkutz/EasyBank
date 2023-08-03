@@ -1,7 +1,7 @@
 import './Footer.css'
 import Button from '../Button/Button'
 
-import { logo, iconFacebook, iconYoutube, iconTwitter, iconPinterest, iconInstagram } from '../../assets/index'
+import { iconFacebook, iconYoutube, iconTwitter, iconPinterest, iconInstagram } from '../../assets/index'
 import Logo from '../Logo/Logo'
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
 
           <div className='logo-social'>
             <div>
-              <Logo color={'#fff'}/>
+              <Logo color={'#fff'} />
             </div>
             <div className='social-icons'>
               <a href="#">
