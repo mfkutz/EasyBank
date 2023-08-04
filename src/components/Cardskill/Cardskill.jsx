@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 const Cardskill = () => {
 
     const [data, setData] = useState([])
-    
+
     useEffect(() => {
 
         const fetchData = async () => {
@@ -20,11 +20,10 @@ const Cardskill = () => {
         };
 
         fetchData()
-    }, []); // El array vacío [] asegura que useEffect solo se ejecute una vez al montar el componente.
+    }, [])
 
     return (
         <>
-
             {data.map((item, index) => (
                 <div className="card" key={index}>
                     <img src={item.image} alt="Online Banking" />

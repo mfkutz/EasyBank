@@ -6,11 +6,7 @@ const Skills = () => {
     <section id='skills'>
       <div className="wrapper">
         <div className='skills-container'>
-
-         
           <Cardskill />
-
-         
         </div>
       </div>
     </section>
