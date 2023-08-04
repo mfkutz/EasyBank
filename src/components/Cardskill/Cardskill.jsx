@@ -12,7 +12,7 @@ const Cardskill = () => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('/src/mock/skills.json')
+                const response = await fetch('/skills.json')
                 const jsonData = await response.json()
                 setData(jsonData)
             } catch (error) {
