@@ -1,6 +1,5 @@
 import './Cardskill.css'
 
-import { iconOnline, iconApi, iconBudgeting, iconOnboarding } from '../../assets/index'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
