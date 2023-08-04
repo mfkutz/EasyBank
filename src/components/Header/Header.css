@@ -157,6 +157,7 @@ header .right {
         top: -150px;
         width: 700px;
     }
+
     header .header-container {
         padding: 0;
     }
@@ -169,5 +170,9 @@ header .right {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 350px;
+    }
+
+    header .left p {
+        padding: 18px 18px;
     }
 }
